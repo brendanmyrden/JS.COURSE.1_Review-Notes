@@ -81,3 +81,45 @@ console.log(x);
 
 // COMPARISON OPERATORS
 
+sarahsAge = 19;
+
+console.log(brendansAge > sarahsAge); // boolean 
+console.log(brendansAge >= 19); // boolean
+
+const isLegalAgeToDrink = brendansAge >= 19;
+console.log(isLegalAgeToDrink);
+
+
+// AVERAGES
+
+averageAge = ((brendansAge + sarahsAge) / 2);
+console.log(averageAge);
+
+
+// STRINGS : TEMPLATE LITERALS
+
+firstName = "Bren";
+console.log(firstName); 
+
+const job = `full time programmer`;
+const birthYear = 1994;
+const yearNow = 2023;
+
+const brendanString = `${firstName} is a ${job} born in ${birthYear}. He is currently ${yearNow - birthYear} years old.`;
+console.log(brendanString);
+
+
+// Regular strings, Strings with multiple lines
+
+console.log(`This is a regular string`);
+
+console.log(`This is 
+a
+string
+with
+multiple
+lines. 
+Tada!`);
+
+
+
