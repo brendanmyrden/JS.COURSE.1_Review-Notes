@@ -78,3 +78,6 @@ console.log(x);
 x --;
 console.log(x);
 
+
+// COMPARISON OPERATORS
+
