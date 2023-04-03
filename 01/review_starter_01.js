@@ -171,4 +171,8 @@ console.log(2 + 4 + '5');
 console.log('10' - '4' - 2 + '2'); // 42
 
 
+// FALSY VALUES : false, 0, '' (an empty string), undefined, null, NaN
+
+// TRUTHY VALUES : true, any number other than 0, any filled in string, an empty object (all true once converted to boolean)
+
 
