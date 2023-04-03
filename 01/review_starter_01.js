@@ -122,4 +122,53 @@ lines.
 Tada!`);
 
 
+// DECISIONS , IF / ELSE STATEMENTS
+
+const age = 11;
+const isOldEnough = age >= 16;
+const nameOf = `Felix`;
+
+if(isOldEnough){
+    console.log(`${nameOf} is old enough to get his driver's permit.`);
+} else {
+    const yearsLeftToGo = 16 - age;
+    console.log(`${nameOf} isn't old enough to get his driver's permit. He has ${yearsLeftToGo} years left to go!`);
+}
+
+
+const billsBirthyear = 1980;
+const newName = `Bill`;
+let century;
+
+if(billsBirthyear >= 2000) {
+    century = 21
+    console.log(`${newName} was born in the ${century}st century!`);
+} else {
+    century = 20
+    console.log(`${newName} was born in the ${century}th century!`);
+}
+
+
+// CONVERTING STRINGS TO NUMBERS
+
+newNumber = Number('22'); // The number appears purple/blue in the console because it is computed as a number
+console.log(newNumber);
+
+newString = String(23);
+console.log(newString); // The 'number' appears white in the console because it is computed as a string
+
+
+// TYPE COERCION
+
+console.log(`I am ` + 29 + ` years of age.`);
+
+console.log('24' - '4' - 2); // 18
+
+console.log('23' * '2'); // 46
+
+console.log(2 + 4 + '5');
+
+console.log('10' - '4' - 2 + '2'); // 42
+
+
 
