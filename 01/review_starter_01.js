@@ -175,4 +175,37 @@ console.log('10' - '4' - 2 + '2'); // 42
 
 // TRUTHY VALUES : true, any number other than 0, any filled in string, an empty object (all true once converted to boolean)
 
+// EXAMPLE
+
+const money = 0;
+
+if(money){
+    console.log(`You have plenty, but don't spend it all!`);
+} else {
+    console.log(`You have no money, go and earn some!`);
+}
+
+// else is executed because 0 is a falsy value
+
+
+let height;
+
+if (height){
+    console.log(`Yes, the variable 'height' is defined.`);
+} else {
+    console.log(`No, the variable 'height' is not defined.`);
+}
+
+
+// EQUALITY OPERATORS
+
+const yellow = 'This is a color';
+if(yellow === 'This is a color') console.log(`Yellow is a great color to choose.`);
+
+const favouriteNumber = 22;
+if (favouriteNumber === 22) console.log(`Why is your favourite number 22?`);
+
+console.log(favouriteNumber);
+
+
 
