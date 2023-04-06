@@ -283,3 +283,31 @@ Attempt doing a useful task, regardless of what it is.`);
 
 // EXAMPLE 2
 
+const familyMember = `dad`;
+
+switch (familyMember) {
+
+    case `mom`:
+    console.log(`There is a mom in this family.`);
+    break;
+
+    case `dad`:
+    console.log(`There is a dad in this family`);
+    break;
+
+    case `brother`:
+    console.log(`There is a brother in this family`);
+    break;
+
+    case `sister`:
+    console.log(`Ther is a sister in this family`);
+    break;
+
+    default:
+    console.log(`There are members in this family but they are not defined. 
+    
+This is a default message.`); 
+
+break;
+
+}
