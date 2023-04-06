@@ -329,7 +329,7 @@ if(famMember === `mom`) {
 
     console.log(`There is a brother in this family`);
 
-} else if (famMember === `brother`) {
+} else if (famMember === `sister`) {
 
     console.log(`There is a sister in this family`);
 
