@@ -252,4 +252,34 @@ if(!hasEatenSupper && hasGoodFood && isNotLazy) {
 }
 
 
-// 
+// THE SWITCH STATEMENT
+
+const task = `trade`; // try 'lol' to get default message
+
+switch (task) {
+
+    case `code`:
+    console.log(`Today is a day for coding`);
+    break;
+
+    case `trade`:
+    console.log(`Today is a day for trading`);
+    break;
+
+    case `music`:
+    console.log(`Today is a day for music`);
+    break;
+
+    default:
+    console.log(
+
+`This is a default message. 
+
+Attempt doing a useful task, regardless of what it is.`);
+    
+    break;
+                }
+
+
+// EXAMPLE 2
+
