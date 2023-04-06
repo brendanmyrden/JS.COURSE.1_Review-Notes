@@ -311,3 +311,26 @@ This is a default message.`);
 break;
 
 }
+
+
+// EXAMPLE 2 but as an IF / ELSE Statement
+
+const famMember = `mom`;
+
+if(famMember === `mom`) {
+
+    console.log(`There is a mom in this family.`);
+
+} else if (famMember === `dad`) {
+
+    console.log(`There is a dad in this family`);
+
+} else if (famMember === `brother`) {
+
+    console.log(`There is a brother in this family`);
+
+} else if (famMember === `brother`) {
+
+    console.log(`There is a sister in this family`);
+
+}
