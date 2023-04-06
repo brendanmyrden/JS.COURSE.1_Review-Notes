@@ -208,4 +208,48 @@ if (favouriteNumber === 22) console.log(`Why is your favourite number 22?`);
 console.log(favouriteNumber);
 
 
+// PROMPTS
 
+// const fav = Number(prompt("What is your favourite number?")); // commented out bc of consistent need to fill the prompt each time to console is opened
+// console.log(fav);
+
+
+// BOOLEANS, &&, ||, ! OPERATORS
+
+const hasEatenSupper = false; //VAR A
+const hasGoodFood = true; // VAR B
+
+console.log(hasEatenSupper && hasGoodFood);
+
+console.log(hasEatenSupper || hasGoodFood);
+
+console.log(!hasEatenSupper); // will display the opposite in console
+
+
+const shouldEat = !hasEatenSupper && hasGoodFood;
+
+if (shouldEat) {
+
+   console.log(`John ought to have a meal!`)
+
+} else {
+
+    console.log(`John's already ate, and need to head to the grocery store to get something to cook.`)
+}
+
+
+const isNotLazy = true // VAR C
+
+console.log(!hasEatenSupper && hasGoodFood && isNotLazy);
+
+if(!hasEatenSupper && hasGoodFood && isNotLazy) {
+
+    console.log(`John should prepare and eat a good meal.`);
+
+} else {
+
+    console.log(`John doesn't need to prepare a meal right now.`);
+}
+
+
+// 
