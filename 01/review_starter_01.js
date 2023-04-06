@@ -334,3 +334,42 @@ if(famMember === `mom`) {
     console.log(`There is a sister in this family`);
 
 }
+
+
+// The CONDITIONAL / TERNARY OPERATOR
+
+// Ex 1
+
+const ageOfPerson = 24;
+
+ageOfPerson >= 21 ? console.log(`This person is over 20 years old.`) : console.log(`This person is under 20 years old.`);
+
+// Ex 2
+
+const hasWritingUtensil = true;
+
+hasWritingUtensil === true ? console.log(`This student has a writing utensil.`) : console.log(`This student does not have a writing utensil.`);
+
+// Ex 3
+
+const yearBorn = 2002;
+
+yearBorn >= 2000 ? console.log(`This person was born in the 21st century.`) : console.log(`This person was born in the 20th century.`);
+
+// ______________________________
+
+
+// Simplier form of CONDITIONAL / TERNARY OPERATOR 
+
+const levelCompleted = 12;
+
+const completedHighSchool = levelCompleted === 12 ? 'Yes, the last level was completed' : 'No, there are still levels to complete';
+
+console.log(completedHighSchool);
+
+
+const heightInFeet = 6.2;
+
+const tallEnoughForRide = heightInFeet >= 5 ? `Yes this person is tall enough to ride.` : `No, you must be over 5 feet tall to ride.`
+
+console.log(tallEnoughForRide);
