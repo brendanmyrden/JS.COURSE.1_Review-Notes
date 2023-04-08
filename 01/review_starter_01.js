@@ -393,3 +393,24 @@ console.log(tallEnough);
 console.log();
 
 
+// FURTHER CONDITIONALS
+
+const hr = 1;
+console.log(`The ${hr >= 4 ? `birds are` : `birds are not`} awake`);
+
+//
+
+const hasItBeenSeasoned = false; // try true
+
+console.log(`${hasItBeenSeasoned === false ? `Yes I will have some` : `No thank you, my meal is already seasoned with`} salt and pepper`);
+
+
+const amtOfExerciseInMinutes = 55;
+
+console.log(`This amount of excercise is considered ${amtOfExerciseInMinutes >= 50 && amtOfExerciseInMinutes <= 60 ? `within the optimal range.` : `outside of the optimal range.`}`);
+
+
+dayOfWeekByNumber = 3;
+
+const isItPastMidWeek = dayOfWeekByNumber >= 4 ? `Yes, it is past mid week` : `No it has not past mid week as yet.`
+
