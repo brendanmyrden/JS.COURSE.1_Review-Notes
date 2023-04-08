@@ -373,3 +373,23 @@ const heightInFeet = 6.2;
 const tallEnoughForRide = heightInFeet >= 5 ? `Yes this person is tall enough to ride.` : `No, you must be over 5 feet tall to ride.`
 
 console.log(tallEnoughForRide);
+
+
+// OR 
+
+let tallEnough;
+
+if(height >= 5){
+
+    tallEnough = `Yes.`
+
+} else {
+
+    tallEnough = `No.`
+}
+
+console.log(tallEnough);
+
+console.log();
+
+
