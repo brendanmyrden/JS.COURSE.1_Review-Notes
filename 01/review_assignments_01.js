@@ -75,3 +75,27 @@ if (markBMI_2 > johnBMI_2) {
 const isJohnsHigher = johnBMI_2 > markBMI_2 ? console.log(`Yes, John's is higher.`) : console.log(`No, John's is lower.`);
 
 // No need to console.log(isJohnsHigher) because the ternary operator already includes the console.log in the sentence. 
+
+
+// Incremental Increase
+
+let howManyKids = 3;
+console.log(howManyKids);
+
+const kidString_1 = console.log(`As of the year 2020, my wife and I have ${howManyKids}`);
+ 
+
+howManyKids++;
+console.log(howManyKids);
+
+const kidString_2 = console.log(`As of the year 2022, my wife and I have ${howManyKids}`);
+
+// Example of Conditional Operator
+
+const thisYear = 2023;
+const isThereThanTwoKids = howManyKids > 2 ? console.log(`Yes`) : console.log(`No`);
+
+const description = 'There are ' + howManyKids + ' kids in this family as of ' + thisYear;
+console.log(description);
+
+
