@@ -38,3 +38,35 @@ function whatIsYourName (nameOfPerson) {
 }
 
 whatIsYourName(`Bernard`);
+
+
+// FUNCTION EXPRESSION
+
+const middleName = function (inputMiddleName) {
+    const mName = console.log(`Your middle name is ${inputMiddleName}.`);
+    return mName;
+}
+
+const lindasMiddleName = middleName(`Jessica`);
+const johnsMiddleName = middleName(`Francis`);
+
+
+const freeThisNation = function (nationName) {
+    const inNeedOfFreedom = console.log(`${nationName} is in need of true freedom.`);
+}
+
+const canadianFreedom = freeThisNation(`Canada`);
+const chineseFreedom = freeThisNation(`China`);
+
+
+const sentence = function (wordsOfSentence) {
+    const whatIWantToSay = console.log(`This is the phrase I want to say : "${wordsOfSentence}."`);
+}
+
+
+const sentence_1 = sentence(`You are an incredible creation, the creator told me so. Value is set by scarcity and there is only one of you. You're rare`);
+
+const sentence_2 = sentence(`I am an incredible creation, the creator told me so. Value is set by scarcity and there is only one of me. I'm rare`);
+
+
+
