@@ -42,6 +42,8 @@ whatIsYourName(`Bernard`);
 
 // FUNCTION EXPRESSION
 
+// example 1
+
 const middleName = function (inputMiddleName) {
     const mName = console.log(`Your middle name is ${inputMiddleName}.`);
     return mName;
@@ -51,6 +53,8 @@ const lindasMiddleName = middleName(`Jessica`);
 const johnsMiddleName = middleName(`Francis`);
 
 
+// example 2
+
 const freeThisNation = function (nationName) {
     const inNeedOfFreedom = console.log(`${nationName} is in need of true freedom.`);
 }
@@ -58,6 +62,8 @@ const freeThisNation = function (nationName) {
 const canadianFreedom = freeThisNation(`Canada`);
 const chineseFreedom = freeThisNation(`China`);
 
+
+// example 3
 
 const sentence = function (wordsOfSentence) {
     const whatIWantToSay = console.log(`This is the phrase I want to say : "${wordsOfSentence}."`);
@@ -68,5 +74,19 @@ const sentence_1 = sentence(`You are an incredible creation, the creator told me
 
 const sentence_2 = sentence(`I am an incredible creation, the creator told me so. Value is set by scarcity and there is only one of me. I'm rare`);
 
+
+// example 4
+
+const foodInFridge = function (whatDoWeHaveToEat) {
+    const food = `The foods available to eat are ${whatDoWeHaveToEat}`;
+    return food;
+}
+
+const fridge_1 = foodInFridge(`apples, pears, and cheese.`);
+
+const fridge_2 = foodInFridge(`yogurt, palm hearts, and okra.`);
+
+console.log(fridge_1);
+console.log(fridge_2);
 
 
