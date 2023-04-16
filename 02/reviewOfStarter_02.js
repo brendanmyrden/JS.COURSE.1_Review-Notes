@@ -124,7 +124,7 @@ const fast = (firstName, lengthOfFast, daysCompleted) => {
 
     const isTheFastComplete = lengthOfFast === daysCompleted;
     const daysRemaining = lengthOfFast - daysCompleted;
-    return `It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in this fast.`;
+    return `It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in ${firstName}'s fast.`;
 }
 
 const myFast = fast(`Jordan`, 22, 6);
@@ -132,3 +132,25 @@ const petesFast = fast(`Pete`, 40, 40);
 
 console.log(myFast);
 console.log(petesFast);
+
+
+const whenWillTheMailCome = (amtOfDaysToDeliver, amtOfDaysSinceOrdered) => {
+    const daysleft = amtOfDaysToDeliver - amtOfDaysSinceOrdered;
+    return `The package you ordered will arrive in the mail in ${daysleft} days.`;    
+}
+
+const amazonPackage = whenWillTheMailCome(13, 3);
+const sephoraPackage = whenWillTheMailCome(10, 8);
+
+console.log(amazonPackage);
+console.log(sephoraPackage);
+
+
+const addTheNumbers = (a,b) => `The result of this equation is ${a + b}.`;
+
+const firstEquation = addTheNumbers(3,6);
+const secondEquation = addTheNumbers(5,5);
+
+console.log(firstEquation);
+console.log(secondEquation);
+
