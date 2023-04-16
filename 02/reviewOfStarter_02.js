@@ -90,3 +90,45 @@ console.log(fridge_1);
 console.log(fridge_2);
 
 
+// ARROW FUNCTIONS 
+
+const amtOfYearsInSchool = grade => 13 - grade;
+
+const cindy = amtOfYearsInSchool(2);
+const lucas = amtOfYearsInSchool(4);
+const bettis = amtOfYearsInSchool(9);
+
+console.log(`Cindy has spent ${cindy} years in school.`);
+console.log(`Cindy has spent ${lucas} years in school.`);
+console.log(`Cindy has spent ${bettis} years in school.`);
+
+
+const amtOfCandiesEaten = (totalCandies, leftOverCandies) => totalCandies - leftOverCandies; 
+
+const bensAmt = amtOfCandiesEaten(60, 20);
+
+console.log(`The amount of candies Ben has eaten today are ${bensAmt}.`);
+
+
+const currentYear = 2024;
+
+const yearsSinceGraduating = yearOfGrad => currentYear - yearOfGrad;
+const forSheila = `It has been ${yearsSinceGraduating(2000)} years since Sheila graduated.`;
+const forSam = `It has been ${yearsSinceGraduating(1988)} years since Sam graduated.`;
+
+console.log(forSheila);
+console.log(forSam);
+
+
+const fast = (firstName, lengthOfFast, daysCompleted) => {
+
+    const isTheFastComplete = lengthOfFast === daysCompleted;
+    const daysRemaining = lengthOfFast - daysCompleted;
+    return `It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in this fast.`;
+}
+
+const myFast = fast(`Jordan`, 22, 6);
+const petesFast = fast(`Pete`, 40, 40);
+
+console.log(myFast);
+console.log(petesFast);
