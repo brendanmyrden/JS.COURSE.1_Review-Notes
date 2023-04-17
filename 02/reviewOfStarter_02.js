@@ -169,4 +169,87 @@ console.log(secondEquation);
 
 // FUNCTIONS WITHIN FUNCTIONS
 
-const gardenArrangment = 
+// example 1, practice attempt
+
+// const coralFragmentation = function (numOfSpecifiedCoral, numOfFrags){
+//     const finalAmtOfCorals = numOfSpecifiedCoral * numOfFrags;
+//     return console.log(`This coral has been fragmented into ${finalAmtOfCorals} pieces`);
+// }
+
+// final concluded function
+
+const coralFragmentation = function (numOfSpecifiedCoral, amtDividedInto) {
+    return numOfSpecifiedCoral * amtDividedInto;
+}
+
+// const brainCoral = 1;
+// const bubbleCoral = 4;
+// const stagHornCoral = 2;
+// const honeyCombCoral = 8;
+
+// const brainCoralFrags = coralFragmentation(brainCoral, 6);
+// const bubbleCoralFrags = coralFragmentation(bubbleCoral, 2);
+// const stagHornCoralFrags = coralFragmentation(stagHornCoral, 3);
+// const honeyCombCoralFrags = coralFragmentation(honeyCombCoral, 8);
+
+const coralCollection = function (brainCoral, bubbleCoral, stagHornCoral, honeyCombCoral) {
+
+        const brainCoralFrags = coralFragmentation(brainCoral, 6);
+        const bubbleCoralFrags = coralFragmentation(bubbleCoral, 2);
+        const stagHornCoralFrags = coralFragmentation(stagHornCoral, 3);
+        const honeyCombCoralFrags = coralFragmentation(honeyCombCoral, 8);
+
+    return console.log(`This collector has a aquarium with ${brainCoralFrags} brain corals, ${bubbleCoralFrags} bubble corals, ${stagHornCoralFrags} stagHorn corals, and ${honeyCombCoralFrags} honeycomb corals. Awesome collection!`);
+
+}
+
+const janesCoralCollection = coralCollection(1,4,2,8);
+const arnieCoralCollection = coralCollection(6,4,3,7);
+
+// successful
+
+
+// example 2
+
+function cutThePizzaPlease (numOfPizzas){
+    return numOfPizzas * 8;
+}
+
+function pizzaParty (pizzasDeliveredByBigBite, pizzasDeliveredByGreco) {
+    
+    const piecesOfBigBitePizza = cutThePizzaPlease(pizzasDeliveredByBigBite); 
+    const piecesOfGrecoPizza = cutThePizzaPlease(pizzasDeliveredByGreco);
+    
+    return console.log(`There are ${piecesOfBigBitePizza} pieces of pizza from Big Bite and there are ${piecesOfGrecoPizza} pieces from Greco. Enjoy!`);
+}
+
+const johnnysParty = pizzaParty(4, 1);
+const jennysParty = pizzaParty(10, 5);
+
+// successful
+
+
+// example 3
+
+const cutWoodForFire = (woodProvided) => woodProvided * 4;
+
+const leggeFamilysWood = 10;
+const johnsonFamilyWood = 4;
+const xiFamilyWood = 2;
+
+function communalFireWoodContribution (leggeFamilysWood, johnsonFamilyWood, xiFamilyWood) {
+
+    const leggeFamilyWoodPieces = cutWoodForFire(leggeFamilysWood);
+    const johnsonFamilyWoodPieces = cutWoodForFire(johnsonFamilyWood);
+    const xiFamilyWoodPieces = cutWoodForFire(xiFamilyWood);
+
+    return console.log(`The total amount of pieces provided are ${leggeFamilyWoodPieces + johnsonFamilyWoodPieces + xiFamilyWoodPieces}.`)
+
+};
+
+communalFireWoodContribution(leggeFamilysWood, johnsonFamilyWood, xiFamilyWood);
+
+
+//
+
+
