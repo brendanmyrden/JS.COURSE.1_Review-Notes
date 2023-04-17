@@ -92,6 +92,8 @@ console.log(fridge_2);
 
 // ARROW FUNCTIONS 
 
+//ex 1
+
 const amtOfYearsInSchool = grade => 13 - grade;
 
 const cindy = amtOfYearsInSchool(2);
@@ -103,12 +105,16 @@ console.log(`Cindy has spent ${lucas} years in school.`);
 console.log(`Cindy has spent ${bettis} years in school.`);
 
 
+// ex 2
+
 const amtOfCandiesEaten = (totalCandies, leftOverCandies) => totalCandies - leftOverCandies; 
 
 const bensAmt = amtOfCandiesEaten(60, 20);
 
 console.log(`The amount of candies Ben has eaten today are ${bensAmt}.`);
 
+
+// ex 3
 
 const currentYear = 2024;
 
@@ -119,6 +125,8 @@ const forSam = `It has been ${yearsSinceGraduating(1988)} years since Sam gradua
 console.log(forSheila);
 console.log(forSam);
 
+
+// ex 4
 
 const fast = (firstName, lengthOfFast, daysCompleted) => {
 
@@ -134,6 +142,8 @@ console.log(myFast);
 console.log(petesFast);
 
 
+// ex 5
+
 const whenWillTheMailCome = (amtOfDaysToDeliver, amtOfDaysSinceOrdered) => {
     const daysleft = amtOfDaysToDeliver - amtOfDaysSinceOrdered;
     return `The package you ordered will arrive in the mail in ${daysleft} days.`;    
@@ -146,6 +156,8 @@ console.log(amazonPackage);
 console.log(sephoraPackage);
 
 
+// ex 6
+
 const addTheNumbers = (a,b) => `The result of this equation is ${a + b}.`;
 
 const firstEquation = addTheNumbers(3,6);
@@ -154,3 +166,7 @@ const secondEquation = addTheNumbers(5,5);
 console.log(firstEquation);
 console.log(secondEquation);
 
+
+// FUNCTIONS WITHIN FUNCTIONS
+
+const gardenArrangment = 
