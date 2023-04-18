@@ -250,6 +250,27 @@ function communalFireWoodContribution (leggeFamilysWood, johnsonFamilyWood, xiFa
 communalFireWoodContribution(leggeFamilysWood, johnsonFamilyWood, xiFamilyWood);
 
 
-//
+// IF / ELSE ( With Return Statement )
+
+const calcAge = (birthYear) => 2023 - birthYear;
+
+function howManyYearsTillNinety (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const yearsUntil = 90 - age;
+
+    if (yearsUntil > 0) {
+        console.log(`${firstName} has ${yearsUntil} years until they are ninety years old.`)
+        return yearsUntil;
+    } 
+
+    else {
+        console.log(`${firstName} is already ${age > 90 ? `already passed` : `are`} ninety years old.`)
+        return -1;
+    }
+}
+
+const jim = howManyYearsTillNinety(1992, `Jim`);
+const viv = howManyYearsTillNinety(1943, `Viv`);
+
 
 
