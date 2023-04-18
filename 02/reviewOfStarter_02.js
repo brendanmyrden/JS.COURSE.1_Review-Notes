@@ -351,4 +351,53 @@ const newAges = [calcAgeAnotherWay(birthYearArray[0]), calcAgeAnotherWay(birthYe
 console.log(newAges);
 
 
-// ARRAY OPERATIONS
+// ARRAY OPERATIONS - BASICS
+
+// ADD / PUSH / To Last
+
+const paulsFriends = ['John', 'Mike', 'Seta', 'Fero'];
+paulsFriends.push('Ricardo');
+
+console.log(paulsFriends);
+
+// ADD / To Front
+
+paulsFriends.unshift('Jerry');
+console.log(paulsFriends);
+
+
+// SUBTRACT / REMOVE / From Last
+
+paulsFriends.pop();
+console.log(paulsFriends);
+
+// SUBTRACT / REMOVE / From First 
+
+paulsFriends.shift();
+console.log(paulsFriends);
+
+// LOCATION OF
+
+paulsFriends.indexOf('Mike');
+
+// BOOLEAN, Uses Strict Equality
+
+paulsFriends.includes('Seta');
+
+paulsFriends.push(22);
+paulsFriends.includes('22'); // Uses strict equality
+console.log(paulsFriends);
+
+if(paulsFriends.includes('Fero')) {
+    console.log(`Paul has a friend named Fero.`);
+};
+
+
+const yeshua = [`The Way`, `The Truth`, `The Life`];
+console.log(yeshua);
+
+if(yeshua.includes (`The Way`)) {
+    console.log(`Yeshua is the Way, the Truth, and the Life.`)
+};
+
+
