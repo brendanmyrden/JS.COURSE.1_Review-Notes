@@ -273,4 +273,41 @@ const jim = howManyYearsTillNinety(1992, `Jim`);
 const viv = howManyYearsTillNinety(1943, `Viv`);
 
 
+// DATA STRUCTURES : ARRAYS - Same Value Type
+// Arrays are zero based
+
+const schoolGrades = new Array ('A','B','C','D','E','F');
+console.log(schoolGrades);
+
+const petNames = ['Terrain','Felip','Tuckamore','Peppy'];
+console.log(petNames);
+
+const acidNeutralBase = [0, 7.5, 14];
+console.log(acidNeutralBase);
+
+
+console.log(schoolGrades[0]);
+console.log(schoolGrades[3]);
+
+console.log(petNames[1]);
+console.log(petNames[2]);
+
+console.log(acidNeutralBase[1]);
+
+
+console.log(acidNeutralBase.length); // not zero based
+console.log(schoolGrades.length) // not zero based
+console.log(petNames[petNames.length - 1]);  // use to find the last element in the array
+
+petNames[1] = 'Nero';
+console.log(petNames);
+
+
+// DATA STRUCTURES : ARRAYS - Different Value Types
+
+const sallysFriends = ['Tilly', 'Georgiana','Sue','Velona']; 
+const sally = ['Sally', 24, 2023 - 1990, true, sallysFriends];
+
+console.log(sally);
+
 
