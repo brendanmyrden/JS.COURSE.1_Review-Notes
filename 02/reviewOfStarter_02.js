@@ -273,7 +273,9 @@ const jim = howManyYearsTillNinety(1992, `Jim`);
 const viv = howManyYearsTillNinety(1943, `Viv`);
 
 
-// DATA STRUCTURES : ARRAYS - Same Value Type
+// DATA STRUCTURES 
+// ARRAYS - Same Value Type
+
 // Arrays are zero based
 
 const schoolGrades = new Array ('A','B','C','D','E','F');
@@ -303,7 +305,8 @@ petNames[1] = 'Nero';
 console.log(petNames);
 
 
-// DATA STRUCTURES : ARRAYS - Different Value Types
+
+// ARRAYS - Different Value Types
 
 const sallysFriends = ['Tilly', 'Georgiana','Sue','Velona']; 
 const sally = ['Sally', 24, 2023 - 1990, true, sallysFriends];
@@ -311,3 +314,41 @@ const sally = ['Sally', 24, 2023 - 1990, true, sallysFriends];
 console.log(sally);
 
 
+// ARRAY EXERCISES
+
+//
+
+const calcAgeDifferently = function (birthYear) {
+    const age = 2023 - birthYear;
+    return age;
+}
+
+const birthYearArray = [1990, 1982, 1962, 1945, 2006];
+
+
+const samsAge = calcAgeDifferently(birthYearArray[0]);
+
+const momsAge = calcAgeDifferently(birthYearArray[1]);
+
+const dadsAge = calcAgeDifferently(birthYearArray[2]);
+
+const joesAge = calcAgeDifferently(birthYearArray[3]);
+
+const sistersAge = calcAgeDifferently(birthYearArray[4]);
+
+console.log(samsAge, momsAge, dadsAge, joesAge, sistersAge);
+
+
+//
+
+const calcAgeAnotherWay = function (birthYear) {
+    const age = 2023 -birthYear; 
+    return age;
+}
+
+const newAges = [calcAgeAnotherWay(birthYearArray[0]), calcAgeAnotherWay(birthYearArray[1]), calcAgeAnotherWay(birthYearArray[2]), calcAgeAnotherWay(birthYearArray[3]), calcAgeAnotherWay(birthYearArray[birthYearArray.length - 1])];
+
+console.log(newAges);
+
+
+// ARRAY OPERATIONS
