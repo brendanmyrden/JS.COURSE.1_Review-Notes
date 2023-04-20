@@ -477,9 +477,34 @@ switch (switchNames) {
         console.log(`My name is Freeda`);
         break;
 
+    case `Jill`:
+        console.log(`My name is Jill`);
+        break;
+
     default :
         console.log(`This is a default message. There is no name chosen.`);
         break;
-        
+
 }
 
+
+// CONDITIONAL / TERNARY OPERATORS
+
+const numberOfFamilyMembers = 7;
+
+numberOfFamilyMembers >= 4 ? console.log(`I have a large family.`) : console.log(`My family is of normal statistical size.`);
+
+
+const whatIsTheWeather = `rain and clouds`;
+
+whatIsTheWeather === `rain and clouds` ? console.log(`The weather is rainy and overcast with clouds today.`) : console.log(`The weather is sunny today.`);
+
+
+const numGreaterThanTen = 21;
+
+numGreaterThanTen >= 10 ? console.log(`Yes, the number is greater than 10. Standing at ${numGreaterThanTen}`) : console.log(`No, the number isn't greater than 10. Standing at ${numGreaterThanTen}.`);
+
+
+const isTheEarthHeadedForImplosion = true;
+
+isTheEarthHeadedForImplosion === true ? console.log(`We have to completely change our trajectory with haste.`) : console.log(`There is truly nothing to worry for.`);
