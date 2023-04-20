@@ -401,3 +401,85 @@ if(yeshua.includes (`The Way`)) {
 };
 
 
+// SWITCH STATEMENT 
+
+const animal = `cheval`;
+
+switch(animal) {
+
+    case `vache`:
+    console.log(`C'est une vache`); 
+    break;
+
+    case `chien`:
+    console.log(`C'est un chien`);
+    break;
+
+    case `chat`:
+    console.log(`C'est un chat`);
+    break;
+
+    case `cheval`:
+    console.log(`C'est un cheval`); 
+    break;
+    
+    default: 
+    console.log(`Chosi un animal si voit plait!`);
+    break;
+
+}
+
+
+const favouriteClass = `gym`;
+
+switch (favouriteClass) {
+
+    case `gym`:
+        console.log(`My favourite class at school is gym`);
+        break;
+
+    case `physics`:
+        console.log(`My favourite class at school is physics`);
+        break;
+
+    case `biology`:
+        console.log(`My favourite class at school is biology`);
+        break;
+
+    case `french`:
+        console.log(`My favourite class at school is french`); 
+        break;
+
+    default :
+        console.log(`You must choose a class as your favourite. This is a default message.`)
+        break;
+
+}
+
+
+const switchNames = `Jill`;
+
+switch (switchNames) {
+
+    case `Jack`:
+        console.log(`My name is Jack`);
+        break;
+
+    case `Jefferson`:
+        console.log(`My name is Jefferson`);
+        break;
+
+    case `Imit`:
+        console.log(`My name is Imit`);
+        break;
+
+    case `Freeda`:
+        console.log(`My name is Freeda`);
+        break;
+
+    default :
+        console.log(`This is a default message. There is no name chosen.`);
+        break;
+        
+}
+
