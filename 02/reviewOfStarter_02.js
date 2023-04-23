@@ -563,6 +563,8 @@ names[2] = `Ricardo`;
 console.log(names);
 if(names.includes(`Jim`) ? console.log(`Yes, Jim is on the list.`) : console.log(`No, Jim is not included in this list.`));
 
+// ARRAY tip: The information in an array is stored sequencially. Therefore, data that is naturally in sequence is best stored therein.
+
 
 // OBJECTS
 
@@ -580,9 +582,10 @@ console.log(objectOfLivingSpecies);
 
 const personalObject = {
 
-    name: `Benji`,
+    firstName: `Benji`,
+    givenName: `Reddi`,
     occupation: 'Programmer',
-    interests: [`Music`, `Future Technologies`, `Spiritual Life`, `Nutrient Intake`],
+    interests: [`Music`, ` Future Technologies`, ` Spiritual Life`, ` Nutrient Intake`],
     isThisAHuman: true,
     birthYear: 1994,
     currentYear: 2023,
@@ -605,11 +608,55 @@ console.log(personalObject.calcAge());
 
 // Each pair within the object are labeled a key/value pair. Before the colon (:) being the key, and after the colon(:) being the value attached. 
 
+// OBJECT tip: The information stored in objects are stored using key/value pairs (as noted above), therefore unstructured data that is not in sequence, per se, is best stored therein.
 
 
+// OBJECTS - Practicing dot and bracket notation
+
+console.log(personalObject.name); // the . itself is an operator
+console.log(personalObject.interests);
+
+console.log(personalObject['isThisAHuman']); // this is bracket notation, the key is called using the type string
+
+const nameKey = 'Name';
+console.log(personalObject['first' + nameKey]);
+console.log(personalObject['given' + nameKey]);
 
 
+// PROMPTS
+
+// const interestInPerson = prompt('What would you like to learn about this person? Choose between : firstName, givenName, occupation, interests, isThisAHuman, and birthYear.');
+
+// console.log(personalObject[interestInPerson]);
+
+// The dot notation will not work in this example because it would be searching for the key 'interestInPerson' in the personalObject object. Using the bracket notation works because the prompt computes the chosen value as 'interestInPerson', then the chosen value (which IS a key in the personalObject) is now in the brackets in place of 'interestInPerson'.
 
 
+// DEFAULT MESSAGE FOR PROMPT - Based on undefined being the incorrect prompt answer
+
+// if(personalObject[interestInPerson]) {
+
+//     console.log(personalObject[interestInPerson]);
+
+// } else {
+
+//     console.log(`You must choose between firstName, givenName, occupation, interests, isThisAHuman, and birthYear. It must be spelt exactly as stated.`);
+
+// }
 
 
+// ADDING TO OBJECT
+
+personalObject.location = `Venezuela`;
+personalObject.isWorking = true;
+
+console.log(personalObject);
+
+
+// CALLING from OBJECT
+
+const personalTemplateString = `${personalObject.firstName} has ${personalObject.interests.length} interests which are ${personalObject.interests}.`;
+console.log(personalTemplateString); 
+
+const personalTemplateString_1 = `${personalObject.firstName} ${personalObject.givenName} was born in ${personalObject.birthYear} it's ${personalObject.isThisAHuman} He is a human!`;
+console.log(personalTemplateString_1);
