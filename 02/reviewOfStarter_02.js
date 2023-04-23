@@ -592,16 +592,24 @@ const personalObject = {
     
     // Example of - OBJECT METHOD
 
-    calcAge: function() {
-        console.log(this);
-        return currentYear - this.birthYear;
+    calcAge: function () {
+        return this.currentYear - this.birthYear;
     }
+
+    // calcAge: function (birthYear) {
+    //     console.log(this);
+    //     return this.currentYear - this.birthYear;
+    // },
 
     // calcAgeOfPerson: function (birthyear, currentYear) {
     //     const age = currentYear - birthyear;
     //     return age;
     // }
+
+
 }
+
+// "this" points to the object itself. So within the personalObject the "this" will be equivalent to "personalObject." Therefore, this.birthYear = personalObject.birthYear
 
 console.log(personalObject);
 console.log(personalObject.calcAge());
@@ -660,3 +668,7 @@ console.log(personalTemplateString);
 
 const personalTemplateString_1 = `${personalObject.firstName} ${personalObject.givenName} was born in ${personalObject.birthYear} it's ${personalObject.isThisAHuman} He is a human!`;
 console.log(personalTemplateString_1);
+
+
+console.log(personalObject.calcAge());
+console.log(personalObject['calcAge']());
