@@ -490,21 +490,126 @@ switch (switchNames) {
 
 // CONDITIONAL / TERNARY OPERATORS
 
+// ex 1
+
 const numberOfFamilyMembers = 7;
 
 numberOfFamilyMembers >= 4 ? console.log(`I have a large family.`) : console.log(`My family is of normal statistical size.`);
 
+// ex 2
 
 const whatIsTheWeather = `rain and clouds`;
 
 whatIsTheWeather === `rain and clouds` ? console.log(`The weather is rainy and overcast with clouds today.`) : console.log(`The weather is sunny today.`);
 
+// ex 3
 
 const numGreaterThanTen = 21;
 
 numGreaterThanTen >= 10 ? console.log(`Yes, the number is greater than 10. Standing at ${numGreaterThanTen}`) : console.log(`No, the number isn't greater than 10. Standing at ${numGreaterThanTen}.`);
 
+// ex 4
 
 const isTheEarthHeadedForImplosion = true;
 
 isTheEarthHeadedForImplosion === true ? console.log(`We have to completely change our trajectory with haste.`) : console.log(`There is truly nothing to worry for.`);
+
+
+// ARRAYS - Working with
+
+// Functions and Arrays
+
+const worldPopulation = 7846000000
+
+const percentageOfWorldPopulation = function (population) {
+
+    const percentage = ((population / worldPopulation) * 100).toFixed(2);
+    return percentage;
+
+}
+
+const listOfPopulations = [1439323776, 1380004385, 331002651, 273523615, 220892340];
+
+
+const chinasPopulation = percentageOfWorldPopulation(listOfPopulations[0]);
+const indiasPopulaton = percentageOfWorldPopulation(listOfPopulations[1]);
+const unitedStatesPopulation = percentageOfWorldPopulation(listOfPopulations[2]);
+const indonesiaPopulation = percentageOfWorldPopulation(listOfPopulations[3]);
+const pakistanPopulation = percentageOfWorldPopulation(listOfPopulations[4]);
+
+console.log(`China has ${chinasPopulation} % of the worlds population.`);
+console.log(`India has ${indiasPopulaton} % of the worlds population.`);
+console.log(`The United States of America has ${unitedStatesPopulation} % of the worlds population.`);
+console.log(`Indonesia has ${indonesiaPopulation} % of the worlds population.`);
+console.log(`Pakistan has ${pakistanPopulation} % of the worlds population.`);
+
+// Operators
+
+const cats = [`Chilli`, `Turbo`, `Fish Bandit`, `Chomper`, `Tootles`];
+console.log(cats);
+
+cats.push(`Pickle`);
+console.log(cats);
+
+cats.unshift(`Cherry`, `Gelato`);
+console.log(cats);
+
+cats.shift(`Cherry`);
+console.log(cats);
+
+const names = [`Jim`, `Jeff`, `Pip`, `Jamima`];
+names[2] = `Ricardo`;
+
+console.log(names);
+if(names.includes(`Jim`) ? console.log(`Yes, Jim is on the list.`) : console.log(`No, Jim is not included in this list.`));
+
+
+// OBJECTS
+
+const objectOfLivingSpecies = {
+
+    mainTitle: 'Biota',
+    mainSpecies: [`Animalia`, `Archaea`, `Bacteria`, `Chromista`, `Fungi`, `Plantae`, `Protozoa`],
+    specifiedKingdoms : 7,
+    subKingdoms : 3,
+    correctInformation : true,
+}
+
+console.log(objectOfLivingSpecies);
+
+
+const personalObject = {
+
+    name: `Benji`,
+    occupation: 'Programmer',
+    interests: [`Music`, `Future Technologies`, `Spiritual Life`, `Nutrient Intake`],
+    isThisAHuman: true,
+    birthYear: 1994,
+    currentYear: 2023,
+    
+    // Example of - OBJECT METHOD
+
+    calcAge: function() {
+        console.log(this);
+        return currentYear - this.birthYear;
+    }
+
+    // calcAgeOfPerson: function (birthyear, currentYear) {
+    //     const age = currentYear - birthyear;
+    //     return age;
+    // }
+}
+
+console.log(personalObject);
+console.log(personalObject.calcAge());
+
+// Each pair within the object are labeled a key/value pair. Before the colon (:) being the key, and after the colon(:) being the value attached. 
+
+
+
+
+
+
+
+
+
