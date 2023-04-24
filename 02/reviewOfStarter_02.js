@@ -700,18 +700,46 @@ const schoolCirriculum = {
     sections: 22,
     difficulty: 'High Level',
     isItPractical: true, // try false, watch the template string change
+    personStudyingCurrently: `Jessa`,
 
     calcDaysLeftToStudy: function (amtOfDaysInMonth, currentDate){
         return amtOfDaysInMonth - currentDate;
+    },
+
+    // example of personally made object method
+
+// EX 1
+
+    // retrieveSum: function () {
+    //     console.log(`This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course.`)
+    // },
+
+// EX 2
+
+    retrieveSum: function () {
+        return `This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course. ${this.personStudyingCurrently} currently has ${this.calcDaysLeftToStudy(31,24)} days left to complete the course.`
     }
 
 }
+
+// Attached to EX 1
+
+schoolCirriculum.retrieveSum();
+
+// Attached to EX 2
+
+console.log(schoolCirriculum.retrieveSum());
+
 
 console.log(schoolCirriculum);
 console.log(schoolCirriculum.calcDaysLeftToStudy(31, 24));
 console.log(schoolCirriculum['calcDaysLeftToStudy'](31,24));
 
-const schoolCirriculumTemplateString = `${schoolCirriculum.nameOfCourse} is a course with ${schoolCirriculum.sections} sections, and ${schoolCirriculum.isItPractical === true ? `is a` : `isn't a`} practical course.`;
-console.log(schoolCirriculumTemplateString);
 
+// ARRAYS and OBJECTS connection 
 
+const books = [`Fire in the stove`, `Gems in the garden`, `Holy Bible`];
+books.push(`Mysteries and Insights Revealed`);
+
+console.log(books);
+// Arrays are also Objects, just a special kind of Object. Therefore, push, unshift, pop, shift, and the others are actually object methods used to interact with arrays.
