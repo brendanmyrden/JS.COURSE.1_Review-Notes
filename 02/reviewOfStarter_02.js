@@ -589,17 +589,28 @@ const personalObject = {
     isThisAHuman: true,
     birthYear: 1994,
     currentYear: 2023,
-    
-    // Example of - OBJECT METHOD
+
+    //
+
+
 
     calcAge: function () {
-        return this.currentYear - this.birthYear;
+        this.age = this.currentYear - this.birthYear;
+        return this.age;
     }
 
-    // calcAge: function (birthYear) {
+    // a new property / key is created on the 'personalObject' object
+
+    
+    // Example of - OBJECT METHOD
+    
+    // calcAge: function () {
     //     console.log(this);
     //     return this.currentYear - this.birthYear;
     // },
+
+
+    // Example of - Method without 'this'
 
     // calcAgeOfPerson: function (birthyear, currentYear) {
     //     const age = currentYear - birthyear;
@@ -608,6 +619,10 @@ const personalObject = {
 
 
 }
+
+console.log(personalObject.calcAge());
+console.log(personalObject.age);
+
 
 // "this" points to the object itself. So within the personalObject the "this" will be equivalent to "personalObject." Therefore, this.birthYear = personalObject.birthYear
 
@@ -672,3 +687,31 @@ console.log(personalTemplateString_1);
 
 console.log(personalObject.calcAge());
 console.log(personalObject['calcAge']());
+
+
+// EX - OBJECT + THIS
+
+const schoolCirriculum = {
+
+    nameOfCourse: 'JavaScript Course',
+    basic: `Fundamentals Part 1 + Part 2`,
+    intermediate: `Building a website + Building an app`,
+    expert: `Selling your skills + Using A.I. to achieve coding excellence`,
+    sections: 22,
+    difficulty: 'High Level',
+    isItPractical: true, // try false, watch the template string change
+
+    calcDaysLeftToStudy: function (amtOfDaysInMonth, currentDate){
+        return amtOfDaysInMonth - currentDate;
+    }
+
+}
+
+console.log(schoolCirriculum);
+console.log(schoolCirriculum.calcDaysLeftToStudy(31, 24));
+console.log(schoolCirriculum['calcDaysLeftToStudy'](31,24));
+
+const schoolCirriculumTemplateString = `${schoolCirriculum.nameOfCourse} is a course with ${schoolCirriculum.sections} sections, and ${schoolCirriculum.isItPractical === true ? `is a` : `isn't a`} practical course.`;
+console.log(schoolCirriculumTemplateString);
+
+
