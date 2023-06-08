@@ -300,7 +300,7 @@ switch (familyMember) {
     break;
 
     case `sister`:
-    console.log(`Ther is a sister in this family`);
+    console.log(`There is a sister in this family`);
     break;
 
     default:
