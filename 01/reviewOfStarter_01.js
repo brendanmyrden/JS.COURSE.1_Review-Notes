@@ -196,6 +196,8 @@ if (height){
     console.log(`No, the variable 'height' is not defined.`);
 }
 
+// variable height is undefined, second statement will print
+
 
 // EQUALITY OPERATORS
 
@@ -210,7 +212,7 @@ console.log(favouriteNumber);
 
 // PROMPTS
 
-// const fav = Number(prompt("What is your favourite number?")); // commented out bc of consistent need to fill the prompt each time to console is opened
+// const fav = Number(prompt("What is your favourite number?")); // commented out bc of consistent need to fill the prompt each time the console is opened
 // console.log(fav);
 
 
@@ -234,7 +236,7 @@ if (shouldEat) {
 
 } else {
 
-    console.log(`John's already ate, and need to head to the grocery store to get something to cook.`)
+    console.log(`John's already ate, but needs to head to the grocery store to get his next meal to cook.`)
 }
 
 

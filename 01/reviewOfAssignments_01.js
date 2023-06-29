@@ -82,18 +82,18 @@ const isJohnsHigher = johnBMI_2 > markBMI_2 ? console.log(`Yes, John's is higher
 let howManyKids = 3;
 console.log(howManyKids);
 
-const kidString_1 = console.log(`As of the year 2020, my wife and I have ${howManyKids}`);
+const kidString_1 = console.log(`As of the year 2020, my wife and I have ${howManyKids} kids.`);
  
 
 howManyKids++;
 console.log(howManyKids);
 
-const kidString_2 = console.log(`As of the year 2022, my wife and I have ${howManyKids}`);
+const kidString_2 = console.log(`As of the year 2022, my wife and I have ${howManyKids} kids.`);
 
 // Example of Conditional Operator
 
 const thisYear = 2023;
-const isThereThanTwoKids = howManyKids > 2 ? console.log(`Yes`) : console.log(`No`);
+const isThereMoreThanTwoKids = howManyKids > 2 ? console.log(`Yes`) : console.log(`No`);
 
 const description = 'There are ' + howManyKids + ' kids in this family as of ' + thisYear;
 console.log(description);
