@@ -4,4 +4,4 @@
 
 ## If you use this as practice for yourself, understand that 'commented out' code is that way because it will affect the other code blocks or be consistently invasive when checking the console logs. Examples of this would be alerts and prompts.
 
-## There is also addition personalized examples throughout some of the notes, feel free to use the same examples or change them to an example relevant to you.
+## There is also additional personalized examples throughout some of the notes, feel free to use the same examples or change them to an example relevant to you.
