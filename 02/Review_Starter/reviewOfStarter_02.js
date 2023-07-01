@@ -34,7 +34,7 @@ const aCoupleAnimals = animalLover(2, 2, 0, 1); // Because the template string i
 // FUNCTION DECLARATIONS
 
 function whatIsYourName (nameOfPerson) {
-    const name = console.log(`Your name is ${nameOfPerson}, what a great name!`);
+    console.log(`Your name is ${nameOfPerson}, what a great name!`);
 }
 
 whatIsYourName(`Bernard`);
@@ -56,7 +56,7 @@ const johnsMiddleName = middleName(`Francis`);
 // example 2
 
 const freeThisNation = function (nationName) {
-    const inNeedOfFreedom = console.log(`${nationName} is in need of true freedom.`);
+    console.log(`${nationName} is in need of true freedom.`);
 }
 
 const canadianFreedom = freeThisNation(`Canada`);
@@ -67,6 +67,7 @@ const chineseFreedom = freeThisNation(`China`);
 
 const sentence = function (wordsOfSentence) {
     const whatIWantToSay = console.log(`This is the phrase I want to say : "${wordsOfSentence}."`);
+    return whatIWantToSay;
 }
 
 
@@ -100,9 +101,9 @@ const cindy = amtOfYearsInSchool(2);
 const lucas = amtOfYearsInSchool(4);
 const bettis = amtOfYearsInSchool(9);
 
-console.log(`Cindy has spent ${cindy} years in school.`);
-console.log(`Cindy has spent ${lucas} years in school.`);
-console.log(`Cindy has spent ${bettis} years in school.`);
+console.log(`Cindy has ${cindy} more years to spend in school.`);
+console.log(`Lucas has ${lucas} more years to spend in school.`);
+console.log(`Bettis has ${bettis} more years to spend in school.`);
 
 
 // ex 2
@@ -111,7 +112,7 @@ const amtOfCandiesEaten = (totalCandies, leftOverCandies) => totalCandies - left
 
 const bensAmt = amtOfCandiesEaten(60, 20);
 
-console.log(`The amount of candies Ben has eaten today are ${bensAmt}.`);
+console.log(`Ben has eaten ${bensAmt} candies today.`);
 
 
 // ex 3
@@ -234,20 +235,20 @@ const jennysParty = pizzaParty(10, 5);
 const cutWoodForFire = (woodProvided) => woodProvided * 4;
 
 const leggeFamilysWood = 10;
-const johnsonFamilyWood = 4;
-const xiFamilyWood = 2;
+const johnsonFamilysWood = 4;
+const xiFamilysWood = 2;
 
-function communalFireWoodContribution (leggeFamilysWood, johnsonFamilyWood, xiFamilyWood) {
+function communalFireWoodContribution (leggeFamilysWood, johnsonFamilysWood, xiFamilysWood) {
 
-    const leggeFamilyWoodPieces = cutWoodForFire(leggeFamilysWood);
-    const johnsonFamilyWoodPieces = cutWoodForFire(johnsonFamilyWood);
-    const xiFamilyWoodPieces = cutWoodForFire(xiFamilyWood);
+    const leggeFamilysWoodPieces = cutWoodForFire(leggeFamilysWood);
+    const johnsonFamilysWoodPieces = cutWoodForFire(johnsonFamilysWood);
+    const xiFamilysWoodPieces = cutWoodForFire(xiFamilysWood);
 
-    return console.log(`The total amount of pieces provided are ${leggeFamilyWoodPieces + johnsonFamilyWoodPieces + xiFamilyWoodPieces}.`)
+    return console.log(`The total amount of pieces provided are ${leggeFamilysWoodPieces + johnsonFamilysWoodPieces + xiFamilysWoodPieces}.`)
 
 };
 
-communalFireWoodContribution(leggeFamilysWood, johnsonFamilyWood, xiFamilyWood);
+communalFireWoodContribution(leggeFamilysWood, johnsonFamilysWood, xiFamilysWood);
 
 
 // IF / ELSE ( With Return Statement )
@@ -342,7 +343,7 @@ console.log(samsAge, momsAge, dadsAge, joesAge, sistersAge);
 //
 
 const calcAgeAnotherWay = function (birthYear) {
-    const age = 2023 -birthYear; 
+    const age = 2023 - birthYear; 
     return age;
 }
 
@@ -385,8 +386,8 @@ paulsFriends.indexOf('Mike');
 paulsFriends.includes('Seta');
 
 paulsFriends.push(22);
-paulsFriends.includes('22'); // Uses strict equality
-console.log(paulsFriends);
+console.log(paulsFriends.includes('22')); // Uses strict equality
+
 
 if(paulsFriends.includes('Fero')) {
     console.log(`Paul has a friend named Fero.`);
@@ -587,47 +588,38 @@ const personalObject = {
     occupation: 'Programmer',
     interests: [`Music`, ` Future Technologies`, ` Spiritual Life`, ` Nutrient Intake`],
     isThisAHuman: true,
-    birthYear: 1994,
+    birthYear: 2001, // try 1993
     currentYear: 2023,
+    milleniumChange: 2000,
 
     //
 
-
+    // Example of - OBJECT METHOD
 
     calcAge: function () {
         this.age = this.currentYear - this.birthYear;
         return this.age;
-    }
+    },
 
-    // a new property / key is created on the 'personalObject' object
+    wereTheyAliveIn2000: function () {
+        this.aliveIn2000 = this.birthYear <= 2000;
+        return this.aliveIn2000;
+    },
 
-    
-    // Example of - OBJECT METHOD
-    
-    // calcAge: function () {
-    //     console.log(this);
-    //     return this.currentYear - this.birthYear;
-    // },
-
-
-    // Example of - Method without 'this'
-
-    // calcAgeOfPerson: function (birthyear, currentYear) {
-    //     const age = currentYear - birthyear;
-    //     return age;
-    // }
+    // a new property / key pair is created on the 'personalObject' object
 
 
 }
 
+console.log(personalObject);
+
+
 console.log(personalObject.calcAge());
+console.log(personalObject.wereTheyAliveIn2000());
 console.log(personalObject.age);
 
 
 // "this" points to the object itself. So within the personalObject the "this" will be equivalent to "personalObject." Therefore, this.birthYear = personalObject.birthYear
-
-console.log(personalObject);
-console.log(personalObject.calcAge());
 
 // Each pair within the object are labeled a key/value pair. Before the colon (:) being the key, and after the colon(:) being the value attached. 
 
@@ -636,7 +628,7 @@ console.log(personalObject.calcAge());
 
 // OBJECTS - Practicing dot and bracket notation
 
-console.log(personalObject.name); // the . itself is an operator
+console.log(personalObject.firstName); // the . itself is an operator
 console.log(personalObject.interests);
 
 console.log(personalObject['isThisAHuman']); // this is bracket notation, the key is called using the type string
@@ -648,24 +640,11 @@ console.log(personalObject['given' + nameKey]);
 
 // PROMPTS
 
-// const interestInPerson = prompt('What would you like to learn about this person? Choose between : firstName, givenName, occupation, interests, isThisAHuman, and birthYear.');
+const interestInPerson = prompt('What would you like to learn about this person? Choose between : firstName, givenName, occupation, interests, and birthYear.');
 
-// console.log(personalObject[interestInPerson]);
+console.log(personalObject[interestInPerson]);
 
 // The dot notation will not work in this example because it would be searching for the key 'interestInPerson' in the personalObject object. Using the bracket notation works because the prompt computes the chosen value as 'interestInPerson', then the chosen value (which IS a key in the personalObject) is now in the brackets in place of 'interestInPerson'.
-
-
-// DEFAULT MESSAGE FOR PROMPT - Based on undefined being the incorrect prompt answer
-
-// if(personalObject[interestInPerson]) {
-
-//     console.log(personalObject[interestInPerson]);
-
-// } else {
-
-//     console.log(`You must choose between firstName, givenName, occupation, interests, isThisAHuman, and birthYear. It must be spelt exactly as stated.`);
-
-// }
 
 
 // ADDING TO OBJECT
