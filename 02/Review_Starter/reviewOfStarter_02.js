@@ -133,14 +133,22 @@ const fast = (firstName, lengthOfFast, daysCompleted) => {
 
     const isTheFastComplete = lengthOfFast === daysCompleted;
     const daysRemaining = lengthOfFast - daysCompleted;
-    return `It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in ${firstName}'s fast.`;
+
+    if(daysRemaining > 0) {
+
+    console.log(`It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in ${firstName}'s fast.`);
+    
+    return isTheFastComplete, daysRemaining;
+
+} else {
+
+    return console.log(`${firstName} has already completed the fast.`);
+}
+
 }
 
 const myFast = fast(`Jordan`, 22, 6);
 const petesFast = fast(`Pete`, 40, 40);
-
-console.log(myFast);
-console.log(petesFast);
 
 
 // ex 5
@@ -689,15 +697,15 @@ const schoolCirriculum = {
 
 // EX 1
 
-    // retrieveSum: function () {
-    //     console.log(`This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course.`)
-    // },
+    retrieveSum: function () {
+        console.log(`This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course.`)
+    },
 
 // EX 2
 
-    retrieveSum: function () {
-        return `This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course. ${this.personStudyingCurrently} currently has ${this.calcDaysLeftToStudy(31,24)} days left to complete the course.`
-    }
+    // retrieveSum: function () {
+    //     return `This ${this.nameOfCourse} is a course with ${this.sections} sections, and ${this.isItPractical === true ? `is a` : `isn't a`} practical course. ${this.personStudyingCurrently} currently has ${this.calcDaysLeftToStudy(31,24)} days left to complete the course.`
+    // }
 
 }
 
@@ -707,12 +715,12 @@ schoolCirriculum.retrieveSum();
 
 // Attached to EX 2
 
-console.log(schoolCirriculum.retrieveSum());
+// console.log(schoolCirriculum.retrieveSum());
 
 
 console.log(schoolCirriculum);
 console.log(schoolCirriculum.calcDaysLeftToStudy(31, 24));
-console.log(schoolCirriculum['calcDaysLeftToStudy'](31,24));
+console.log(schoolCirriculum['calcDaysLeftToStudy'](31,23));
 
 
 // ARRAYS and OBJECTS connection 
@@ -721,4 +729,5 @@ const books = [`Fire in the stove`, `Gems in the garden`, `Holy Bible`];
 books.push(`Mysteries and Insights Revealed`);
 
 console.log(books);
+
 // Arrays are also Objects, just a special kind of Object. Therefore, push, unshift, pop, shift, and the others are actually object methods used to interact with arrays.

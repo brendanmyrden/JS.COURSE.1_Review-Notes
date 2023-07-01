@@ -89,4 +89,9 @@ const john = {
     }
 }
 
-const getSumOfBMIs = `${john.calcBMI()} > ${mark.calcBMI()} ? `${john.fullName}'s BMI at ${john.calcBMI()}` : `${mark.fullName}'s BMI at ${mark.BMI()}`is the highest`
+const getSumOfBMIs = ` [${john.calcBMI()} > ${mark.calcBMI()} ? ]`
+
+
+(${john.calcBMI()} > ${mark.calcBMI()} ? `${john.fullName}s BMI at ${john.calcBMI()}` : `${mark.fullName}'s BMI at ${mark.BMI()}`is the highest`
+
+console.log(getSumOfBMIs);
