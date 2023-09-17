@@ -137,12 +137,14 @@ const fast = (firstName, lengthOfFast, daysCompleted) => {
     if(daysRemaining > 0) {
 
     console.log(`It is ${isTheFastComplete} that the fast is now completed. There is officially ${daysRemaining} days left in ${firstName}'s fast.`);
-    
+
     return isTheFastComplete, daysRemaining;
 
-} else {
+}   else {
 
-    return console.log(`${firstName} has already completed the fast.`);
+    console.log(`${firstName} has already completed the fast.`);
+
+    return -1;
 }
 
 }
