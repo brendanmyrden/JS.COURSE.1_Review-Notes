@@ -34,7 +34,6 @@ function checkWinner (avgDolphins, avgKoalas) {
 checkWinner();
 
 
-
 // DATA 2
 
 avgDolphins = calcAverage(85, 54, 41);
@@ -89,9 +88,25 @@ const john = {
     }
 }
 
-const getSumOfBMIs = ` [${john.calcBMI()} > ${mark.calcBMI()} ? ]`
+const getSumOfBMIs = ` [${john.calcBMI()} > ${mark.calcBMI()} ? ]`;
 
 
-(${john.calcBMI()} > ${mark.calcBMI()} ? `${john.fullName}s BMI at ${john.calcBMI()}` : `${mark.fullName}'s BMI at ${mark.BMI()}`is the highest`
+// (${john.calcBMI()} > ${mark.calcBMI()} ? `${john.fullName}s BMI at ${john.calcBMI()}` : `${mark.fullName}'s BMI at ${mark.BMI()}`is the highest`;
 
 console.log(getSumOfBMIs);
+
+console.log("Hello World");
+
+
+const powers = 'tongues of fire';
+
+switch (powers) {
+
+    case `love from a pure heart`:
+        console.log(`This is a gift, to love from a pure heart.`);
+        break;
+        
+    case `tongues of fire`: 
+    console.log(`This is a gift bestowed on those baptized in the Holy Spirit.`);
+
+}
